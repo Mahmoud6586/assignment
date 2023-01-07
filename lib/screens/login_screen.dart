@@ -177,7 +177,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 width: double.infinity,
                 height: 0.08 * size.height,
                 child: ElevatedButton(
-                  onPressed: () {
+                  onPressed: () async {
                     if (_saveForm()) {
                       login(emailController.text, passwordController.text);
                     }
